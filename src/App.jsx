@@ -5,11 +5,11 @@ import Home from './pages/home/Home'
 
 function App() {
   return (
-    <>
+    <body className='bg-header bg-no-repeat bg-cover max-w-screen-2xl'>
       <Header></Header>
       <Home></Home>
       <Footer></Footer>
-    </>
+    </body>
   )
 }
 
