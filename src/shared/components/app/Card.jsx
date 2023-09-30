@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
 import ButtonDownload from '../ui/ButtonDownload';
-// import mask from '../../../assets/icons/mask.svg';
+import styles from './Card.module.css';
 
-const Card = ({ src, alt, top, title, size }) => {
+const Card = ({ src, alt, title, size }) => {
   return (
-    <li className="flex relative flex-col items-center">
-      <img
-        src={src}
-        alt={`${alt}`}
-        className="w-[292px] h-[164px] md:w-[308px] md:h-[174px] flex mb-5"
-      />
+    <li className="flex flex-col items-center relative">
+      <div className="flex relative mb-5">
+        <img
+          src={src}
+          alt={`${alt}`}
+          className="w-[292px] h-[164px] md:w-[308px] md:h-[174px] flex "
+        />
+        <div className={`absolute inset-0 w-full h-full ${styles['card-mask']}`}></div>
+      </div>
       <h3
-        className={`absolute top-[${top}px] md:top-[140px] uppercase text-base font-medium text-light font-oswald`}
+        className={`absolute top-[128px] md:top-[140px] uppercase text-base font-medium text-light font-oswald`}
       >
         {title}
       </h3>
@@ -28,7 +31,6 @@ const Card = ({ src, alt, top, title, size }) => {
 Card.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  top: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   size: PropTypes.string.isRequired,
 };

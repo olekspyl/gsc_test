@@ -17,8 +17,8 @@ const Home = () => {
 
         {/* -------  CARD SET ------------ */}
         <ul className="flex flex-col md:flex-row md:flex-wrap items-center gap-10 md:gap-[60px] md:max-w-full md:justify-center xl:w-[1044px] xl:mx-auto">
-          {cards.map(({ src, alt, top, title, size }, index) => {
-            return <Card key={index} src={src} alt={alt} top={top} title={title} size={size} />;
+          {cards.map(({ src, alt, title, size }, index) => {
+            return <Card key={index} src={src} alt={alt} title={title} size={size} />;
           })}
         </ul>
       </section>

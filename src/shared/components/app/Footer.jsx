@@ -1,4 +1,5 @@
 import restriction from '@/assets/icons/restriction.svg';
+import divider from '@/assets/icons/verticalDivider.svg';
 import icons from '../../data/icons';
 import Icon from './Icon';
 
@@ -24,7 +25,7 @@ const Footer = () => {
             <p className="text-light flex font-normal font-rubik text-footer tracking-normal w-[274px] md:w-full md:justify-center text-center mb-2 md:text-footerTab md:tracking-tight xl:text-sm xl:font-light xl:mb-1">
               STALKER is a registered trademark of GSC GAME WORLD GLOBAL LTD. © 2021 GSC Game World.
             </p>
-            <p className="text-light flex font-normal font-rubik text-rights w-[274px] md:w-full md:justify-center text-center tracking-tight mb-4 md:text-footerTab md:tracking-tighter md:mb-26	xl:text-sm xl:font-light xl:mb-0">
+            <p className="text-light flex font-normal font-rubik text-rights w-[274px] md:w-full md:justify-center text-center tracking-tight mb-4 md:text-footerTab md:tracking-tighter md:mb-[42px]	xl:text-sm xl:font-light xl:mb-0">
               All rights reserved. All other copyrights and trademarks are the property of their
               respective owners.
             </p>
@@ -36,25 +37,37 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <ul className="flex flex-wrap justify-center gap-6 relative">
-        {/* {items.map(({ text }, index) => (
-          <FooterItem key={index} text={text}></FooterItem>
-        ))} */}
-        <li className="flex after:content-[''] after:w-[1.5px] after:h-[19px] after:bg-light after:absolute after:ml-[65px]">
-          <p className="text-footerEnd text-light font-rubik font-normal md:text-sm">Press Kit</p>
+      <ul className="md:flex md:justify-center">
+        <li>
+          <ul className="flex flex-wrap justify-center relative mb-3 md:mb-0">
+            <li className="flex ">
+              <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pr-3">
+                Press Kit
+              </p>
+              <img src={divider} alt="divider" className="md:h-[19px]" />
+            </li>
+            <li className="flex ">
+              <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pl-3">
+                FAQ
+              </p>
+              <img src={divider} alt="divider" className="hidden md:flex md:h-[19px] md:px-3" />
+            </li>
+          </ul>
         </li>
-        <li className="flex after:content-[''] after:w-[1.5px] after:h-[19px] after:bg-light after:absolute after:ml-9">
-          <p className="text-footerEnd text-light font-rubik font-normal md:text-sm">FAQ</p>
-        </li>
-        <li className="flex after:content-[''] after:w-[1.5px] after:h-[19px] after:bg-light after:absolute after:ml-[90px]">
-          <p className="text-footerEnd text-light font-rubik font-normal md:text-sm">
-            Terms of Use
-          </p>
-        </li>
-        <li className="flex">
-          <p className="text-footerEnd text-light font-rubik font-normal md:text-sm">
-            Privacy Policy
-          </p>
+        <li>
+          <ul className="flex flex-wrap justify-center relative mb-3">
+            <li className="flex ">
+              <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pr-3">
+                Terms of Use
+              </p>
+              <img src={divider} alt="divider" />
+            </li>
+            <li className="flex ">
+              <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pl-3">
+                Privacy Policy
+              </p>
+            </li>
+          </ul>
         </li>
       </ul>
     </footer>
