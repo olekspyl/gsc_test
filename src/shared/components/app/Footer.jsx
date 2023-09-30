@@ -60,7 +60,7 @@ const Footer = () => {
               <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pr-3">
                 Terms of Use
               </p>
-              <img src={divider} alt="divider" />
+              <img src={divider} alt="divider" className="md:h-[19px]" />
             </li>
             <li className="flex ">
               <p className="text-footerEnd text-light font-rubik font-normal md:text-sm cursor-pointer pl-3">
