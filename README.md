@@ -1,8 +1,6 @@
-# React + Vite
+# Press Kit
+This project will provide you with an information about "S.T.A.L.K.E.R.2" Press Kit. It was bundled by Vite, written with React and stylized with Tailwindcss.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To start project download it and use 'npm install'.
+To start server use 'npm run dev'.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
