@@ -9,9 +9,9 @@ import ButtonPreorder from '../ui/ButtonPreorder';
 
 const Header = ({ toggleMenu }) => {
   return (
-    <header className="bg-header">
-      <section className="mx-5 px-3.5">
-        <div className="flex justify-between items-center">
+    <header className="bg-header ">
+      <section className=" px-3.5 max-w-[1920px] mx-auto">
+        <div className="flex justify-between items-center mx-5">
           <div className="flex">
             <div className="xl:flex items-center xl:mr-[60px]">
               <img src={logo} alt="logo-gsc" className="flex xl:mr-5" />

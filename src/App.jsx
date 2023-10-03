@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="bg-[url('@/assets/images/bg.webp')] bg-no-repeat bg-cover max-w-screen-2xl">
+    <div className="bg-[url('@/assets/images/bg.webp')] bg-no-repeat bg-cover">
       {isMenuOpen && <NavBar closeMenu={() => setMenuOpen(false)} />}
       <Header toggleMenu={toggleMenu} />
       <Home />
